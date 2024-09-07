@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj y calendario</title>
+    <link rel="stylesheet" href="{% static 'css/reloj.css' %}">
+</head>
+<body>
+    <div id="stages">Etapa 1: Día 1</div>
+    <div id="clock">00:00:00</div>
+    <div id="calendar"></div>
+    <button id="capture-btn">Capturar Tiempo</button>
+    <button id="init-btn">Iniciar Cultivo</button>
+    
+    <input type="date" id="input-date" placeholder="Selecciona una fecha">
+    <button id="capture-btn">Calcular Días Transcurridos</button>
+    <p id="result"></p>
+
+    <script src="{% static 'js/reloj.js' %}"></script>
+</body>
+</html>
+

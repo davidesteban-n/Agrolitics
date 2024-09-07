@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Agricultura</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/dashboard3.css' %}">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2><span class="material-icons">agriculture</span> AgroDashboard</h2>
+        </div>
+        <ul class="menu">
+            <li class="active"><span class="material-icons">dashboard</span> Dashboard</li>
+            <li><span class="material-icons">show_chart</span> Estadísticas</li>
+            <li><span class="material-icons">calendar_today</span> Calendario</li>
+            <li><span class="material-icons">settings</span> Configuraciones</li>
+            <li><span class="material-icons">logout</span> Salir</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <span class="material-icons">search</span>
+            </div>
+            <div class="user-actions">
+                <span class="material-icons">notifications</span>
+                <img src="https://via.placeholder.com/40" alt="Usuario" class="user-avatar">
+            </div>
+        </header>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">
+                    <span class="material-icons">opacity</span>
+                </div>
+                <div class="card-info">
+                    <h3>Hidratación</h3>
+                    <p>75%</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <span class="material-icons">thermostat</span>
+                </div>
+                <div class="card-info">
+                    <h3>Temperatura</h3>
+                    <p>22°C</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <span class="material-icons">science</span>
+                </div>
+                <div class="card-info">
+                    <h3>pH</h3>
+                    <p>6.5</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <span class="material-icons">grass</span>
+                </div>
+                <div class="card-info">
+                    <h3>Potasio</h3>
+                    <p>120 mg/L</p>
+                </div>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="chart-container">
+                <h3>Hidratación Semanal</h3>
+                <canvas id="hydrationChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Temperatura Semanal</h3>
+                <canvas id="temperatureChart"></canvas>
+            </div>
+        </div>
+        <div class="calendar-container">
+            <h3>Calendario de Actividades</h3>
+            <div id="calendar"></div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="{% static 'js/dashboard3.js' %}"></script>
+</body>
+</html>

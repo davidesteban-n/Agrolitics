@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header nav {
+    margin-top: 10px;
+}
+
+.nav-link {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffd700;
+}
+
+.hero-section {
+    height: 100vh;
+    background-image: url('https://example.com/imagen_agro.jpg'); /* Reemplaza con una URL válida */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 60px; /* Ajuste para la cabecera */
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 10px 0 20px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.icon-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.icon-box {
+    margin: 0 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.icon-box i {
+    font-size: 3em;
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.message {
+    display: none;
+    text-align: center;
+    margin: 50px auto;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.message h2 {
+    font-size: 2em;
+    color: #28a745;
+}
+
+.message p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

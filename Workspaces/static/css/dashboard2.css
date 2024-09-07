@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+.calendar-section {
+    padding: 20px;
+    text-align: center;
+}
+
+#calendar input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#daysPassed {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}

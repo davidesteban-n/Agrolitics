@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Agricultura</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard2.css' %}">
+    <!-- Iconos de Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Monitoreo de Cultivos</h1>
+    </header>
+    
+    <section class="dashboard">
+        <div class="card">
+            <h2>Hidratación</h2>
+            <canvas id="hydrationChart"></canvas>
+        </div>
+        <div class="card">
+            <h2>pH del Suelo</h2>
+            <canvas id="phChart"></canvas>
+        </div>
+        <div class="card">
+            <h2>Temperatura</h2>
+            <canvas id="temperatureChart"></canvas>
+        </div>
+        <div class="card">
+            <h2>Niveles de Potasio</h2>
+            <canvas id="potassiumChart"></canvas>
+        </div>
+    </section>
+
+    <section class="calendar-section">
+        <h2>Calendario de Monitoreo</h2>
+        <div id="calendar">
+            <input type="date" id="datePicker" value="">
+            <p id="daysPassed">Días transcurridos: 0</p>
+        </div>
+    </section>
+
+    <script src="{% static 'js/dashboard2.js' %}"></script>
+</body>
+</html>

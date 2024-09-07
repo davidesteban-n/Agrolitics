@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Monitoring Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="brand">Plant Monitor</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Sensors</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+            <div class="footer">
+                <a href="#">Logout</a>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <header>
+                <h1>Plant Health Monitoring</h1>
+                <div class="header-right">
+                    <button>Refresh Data</button>
+                </div>
+            </header>
+
+            <section class="info-section">
+                <div class="info-card">
+                    <h2>Soil Humidity</h2>
+                    <canvas id="soilHumidityChart"></canvas>
+                </div>
+                <div class="info-card">
+                    <h2>pH Level</h2>
+                    <canvas id="phLevelChart"></canvas>
+                </div>
+                <div class="info-card">
+                    <h2>Temperature</h2>
+                    <canvas id="temperatureChart"></canvas>
+                </div>
+                <div class="info-card">
+                    <h2>Potassium Level</h2>
+                    <canvas id="potassiumChart"></canvas>
+                </div>
+                <div class="info-card">
+                    <h2>Nitrogen Level</h2>
+                    <canvas id="nitrogenChart"></canvas>
+                </div>
+                <div class="info-card">
+                    <h2>Phosphorus Level</h2>
+                    <canvas id="phosphorusChart"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="{% static 'js/dashboard.js' %}"></script>
+</html>

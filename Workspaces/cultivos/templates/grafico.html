@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrolitics - Gráfico de Líneas Estandarizado</title>
+    <link rel="stylesheet" href="{% static 'css/grafico.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="agrolitic.jpeg" alt="Logo de mi empresa" width="100" height="100">
+        </div>
+        <div class="title-container">
+            <img src="agrolitic.jpeg" alt="Logo de Agrolitics" width="100" height="100">
+            <h1>Agrolitics</h1>
+        </div>
+    </header>
+
+    <main role="main">
+        <div class="container">
+            <section class="data-section">
+                <h2>Datos de Temperatura</h2>
+                <div class="chart-container">
+                    <canvas id="lineChart"></canvas>
+                </div>
+                <div class="controls">
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <script src="{% static 'js/script.js' %}"></script>
+
+    <footer>
+        <p>© 2024 Agrolitics by SENNOVA. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

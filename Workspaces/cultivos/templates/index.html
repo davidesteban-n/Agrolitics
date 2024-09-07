@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Bienvenida - Agro</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1><i class="fas fa-seedling"></i> AgroliTics</h1>
+    </header>
+    
+    <div class="hero-section">
+        <div class="content">
+            <h1>Bienvenido al Mundo del Agro</h1>
+            <p>Descubre cómo la tecnología puede transformar la agricultura y llevarla a nuevos niveles.</p>
+            <div class="icon-section">
+                <div class="icon-box">
+                    <i class="fas fa-leaf"></i>
+                    <p>Sostenibilidad</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-tractor"></i>
+                    <p>Tecnología</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-water"></i>
+                    <p>Gestión de Recursos</p>
+                </div>
+            </div>
+            <button onclick="showMessage()">Saber más</button>
+            <button onclick="navigateToDashboard3()">Empezar</button>
+        </div>
+    </div>
+    
+    <div class="message" id="welcomeMessage">
+        <h2>Gracias por unirte a nosotros en este viaje.</h2>
+        <p>Tu aventura en el agro comienza ahora.</p>
+    </div>
+    
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
